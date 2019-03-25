@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Doctor Finder</title>
+    <!-- you can also say this:-->
+     <link rel="icon" type="image/png" href="logo.png" />
+
+
+    <!--Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
+    <!--Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--Swiper CSS-->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!--Styles-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/custom.js"></script>
+    <style>
+
+    .appointment-box{
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 70px;
+      font-size: 21px;
+    }
+    .appointment2-box{
+      padding-left: 50px;
+      padding-right: 50px;
+      padding-bottom: 70px;
+      font-size: 21px;
+    }
+    </style>
+
+
+</head>
+<body>
+    <header class="site-header">
+        <div class="nav-bar">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 d-flex flex-wrap justify-content-between align-items-center">
+                        <div class="site-branding d-flex align-items-center">
+                           <a class="d-block" href="index.html" rel="home"><img class="d-block" src="images/logo.png" alt="logo"></a>
+                        </div><!--.site-branding-->
+
+
+
+                        <nav class="site-navigation d-flex justify-content-end align-items-center">
+                            <ul class="d-flex flex-column flex-lg-row justify-content-lg-end align-items-center">
+                                <li class="current-menu-item"><a href="/">Home</a></li>
+                                  <li><a href="/user-signup"> User Sign Up</a></li>
+                                  <li><a href="/hospital-signup"> Hospital Sign Up</a></li>
+
+                              <li class="call-btn button gradient-bg mt-3 mt-md-0">
+                                    <a class="d-flex justify-content-center align-items-center" href="#"><img src="images/emergency-call.png"> +1 920 234567</a>
+                                </li>
+                            </ul>
+                        </nav><!--.site-navigation-->
+
+                        <div class="hamburger-menu d-lg-none">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div><!-- .hamburger-menu -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .nav-bar -->
+
+
+        <div class="swiper-container hero-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide hero-content-wrap" style="background-image: url('images/hero.jpg')">
+                    <div class="hero-content-overlay position-absolute w-100 h-100">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                    <header class="entry-header">
+                                        <h1>The Best <br>Medical Services</h1>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content mt-4">
+                                        <p><strong>We care for your Health</strong></p>
+                                    </div><!-- .entry-content -->
+
+
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content-overlay -->
+                </div><!-- .hero-content-wrap -->
+
+
+                <div class="swiper-slide hero-content-wrap" style="background-image: url('images/hero.jpg')">
+                    <div class="hero-content-overlay position-absolute w-100 h-100">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                    <header class="entry-header">
+                                        <h1>The Best <br>Medical Services</h1>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content mt-4">
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec malesuada lorem maximus mauris scelerisque, at rutrum nulla dictum. Ut ac ligula sapien. Suspendisse cursus faucibus finibus.</p>
+                                    </div><!-- .entry-content -->
+
+                                    <footer class="entry-footer d-flex flex-wrap align-items-center mt-4">
+                                        <a href="#" class="button gradient-bg">Read More</a>
+                                    </footer><!-- .entry-footer -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content-overlay -->
+                </div><!-- .hero-content-wrap -->
+
+
+                <div class="swiper-slide hero-content-wrap" style="background-image: url('images/hero.jpg')">
+                    <div class="hero-content-overlay position-absolute w-100 h-100">
+                        <div class="container h-100">
+                            <div class="row h-100">
+                                <div class="col-12 col-lg-6 d-flex flex-column justify-content-center align-items-start">
+                                    <header class="entry-header">
+                                        <h1>The Best <br>Medical Services</h1>
+                                    </header><!-- .entry-header -->
+
+                                    <div class="entry-content mt-4">
+                                        <p>We here offer you </p>
+                                    </div><!-- .entry-content -->
+
+                                    <footer class="entry-footer d-flex flex-wrap align-items-center mt-4">
+                                        <a href="#" class="button gradient-bg">Read More</a>
+                                    </footer><!-- .entry-footer -->
+                                </div><!-- .col -->
+                            </div><!-- .row -->
+                        </div><!-- .container -->
+                    </div><!-- .hero-content-overlay -->
+                </div><!-- .hero-content-wrap -->
+            </div><!-- .swiper-wrapper -->
+
+            <div class="pagination-wrap position-absolute w-100">
+                <div class="swiper-pagination d-flex flex-row flex-md-column"></div>
+            </div><!-- .pagination-wrap -->
+        </div><!-- .hero-slider -->
+    </header><!-- .site-header -->
+
+
+    <div class="homepage-boxes">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6 col-lg-4">
+                        <div class="appointment-box">
+                            <h2 class="d-flex align-items-center">Hospital Officials Login</h2>
+                            <form class="d-flex flex-wrap justify-content-between" action = '/hospital-welcome' method = "POST" >
+                                <input type="email" placeholder="Hospital Email" name = "email">
+
+                                <input type="password" placeholder="Password" name = "pass">
+
+                                <input class="button gradient-bg" type="submit" value="Login">
+                            </form>
+                        </div>
+                    </div>
+                <div class="col-12 col-md-6 col-lg-3 mt-5 mt-md-0">
+                    <div class="emergency-box">
+                        <h2 class="d-flex align-items-center">Emergency</h2>
+
+                        <div class="call-btn button gradient-bg">
+                            <a class="d-flex justify-content-center align-items-center" href="#"><img src="images/emergency-call.png"> +1 920 234567</a>
+                        </div>
+
+                        <p>In case of any queries please contact the above number</p>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-5 mt-5 mt-lg-0">
+                    <div class="appointment-box">
+                        <h2 class="d-flex align-items-center">Other users Login</h2>
+                        <form class="d-flex flex-wrap justify-content-between" action = '/user-welcome' method = "POST" >
+                        <input type="email" placeholder="User ID" name = "user">
+                        <input type="password" placeholder="Password" name = "pass">
+                            <input class="button gradient-bg" type="submit" value="Login" >
+                        </form>
+                    </div>
+</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="our-departments">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="our-departments-wrap">
+                        <h2>Our Working Centers</h2>
+                          <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3>Chennai</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>We have our Headquarters situated at</p>
+                                        <p> 4th main street,Adyar,Chennai- 600 025</p>
+                                    </div>
+                                </div>
+                            </div>
+                              <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+                                        <h3>Madurai</h3>
+                                    </header>
+                                             <div class="entry-content">
+                                        <p>In the Temple city of Madurai we are busy working at</p>
+                                        <p>No: 23, 5th cross street, Near Meenakshi Amman Temple, Madurai- 621 114</p>
+                                    </div>
+                                </div>
+                            </div>
+                                  <div class="col-12 col-md-6 col-lg-4">
+                                <div class="our-departments-cont">
+                                    <header class="entry-header d-flex flex-wrap align-items-center">
+
+                                        <h3>Tiruchirapalli</h3>
+                                    </header>
+
+                                    <div class="entry-content">
+                                        <p>You can reach us in  Rockfort city at</p>
+                                        <p>No: 12, Thillai Nagar, Trichy- 620 003</p>
+                                    </div>
+                                </div>
+                            </div
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="site-footer">
+        <div class="footer-widgets">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="foot-about">
+
+
+                            <p>This application is developed for the betterment of Mankind by Mankind with great efforts. Hence you are not requested to spoil the efforts of the founders by entering any unwanted information</p>
+
+                            <p class="copyright">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script>
+<p> this is copywrited to the founders of the organisation </p>
+                        </div><!-- .foot-about -->
+                    </div><!-- .col -->
+
+
+
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                        <div class="foot-contact">
+                            <h2>Contact</h2>
+
+
+
+                            <ul class="p-0 m-0">
+                                <li><span>Address:</span>Department of Computer Science and Engineering, Anna University, Chennai 600 025</li>
+                                <li><span>Phone:</span>+1 920 234567</li>
+                                <li><span>Email:</span>vijayarshath123@gmail.com</li>
+                            </ul>
+                        </div>
+                    </div><!-- .col -->
+
+                    <div class="col-12 col-md-6 col-lg-4 mt-5 mt-md-0">
+                        <div class="foot-links">
+                            <h2>Usefull Links</h2>
+
+                            <ul class="p-0 m-0">
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About us</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </div><!-- .foot-links -->
+                    </div><!-- .col -->
+                </div><!-- .row -->
+            </div><!-- .container -->
+        </div><!-- .footer-widgets -->
+    </footer><!-- .site-footer -->
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Colorlib">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="#">
+    <!-- Page Title -->
+    <title>Listing &amp; {{title}}</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/css3/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css3?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+    <!-- Simple line Icon -->
+    <link rel="stylesheet" href="/css3/simple-line-icons.css">
+    <!-- Themify Icon -->
+    <link rel="stylesheet" href="/css3/themify-icons.css">
+    <!-- Hover Effects -->
+    <link rel="stylesheet" href="/css3/set1.css">
+    <!-- Swipper Slider -->
+    <link rel="stylesheet" href="/css3/swiper.min.css">
+    <!-- Magnific Popup CSS -->
+    <link rel="stylesheet" href="/css3/magnific-popup.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/css3/style.css">
+</head>
+
+<body>
+    <!--============================= BOOKING =============================-->
+    <div>
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+
+                <div class="swiper-slide">
+                        <img src="/images/sliderimage1.jpg" class="img-fluid" alt="#">
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="grid image-link">
+                        <img src="/images/sliderimage2.png" class="img-fluid" alt="#">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="grid image-link">
+                        <img src="/images/sliderimage3.png" class="img-fluid" alt="#">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="grid image-link">
+                        <img src="/images/sliderimage4.jpg" class="img-fluid" alt="#">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="grid image-link">
+                        <img src="/images/sliderimage5.jpg" class="img-fluid" alt="#">
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="" class="grid image-link">
+                        <img src="/images/sliderimage6.jpg" class="img-fluid" alt="#">
+                    </a>
+                </div>
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination swiper-pagination-white"></div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next swiper-button-white"></div>
+            <div class="swiper-button-prev swiper-button-white"></div>
+        </div>
+    </div>
+    <!--//END BOOKING -->
+    <!--============================= RESERVE A SEAT =============================-->
+    {{#each r}}
+    <section class="reserve-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>{{name}}</h5>
+                    <h6>{{email}}</h6>
+                    <h6>{{specialization}}</h6>
+                </div>
+                <div class="col-md-6">
+                    <div class="reserve-seat-block">
+                        <div class="reserve-rating">
+                        </div>
+                        <div class="reserve-btn">
+                            <div class="featured-btn-wrap">
+                                <a href="/appointment/{{doctor_id}}" class="btn btn-danger">FIX AN APPOINTMENT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    {{/each}}
+    <!--//END RESERVE A SEAT -->
+    <!--============================= BOOKING DETAILS =============================-->
+
+
+
+
+    <!-- jQuery, Bootstrap JS. -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Magnific popup JS -->
+    <script src="js/jquery.magnific-popup.js"></script>
+    <!-- Swipper Slider JS -->
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 3,
+            slidesPerGroup: 3,
+            loop: true,
+            loopFillGroupWithBlank: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+    <script>
+        if ($('.image-link').length) {
+            $('.image-link').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+        if ($('.image-link2').length) {
+            $('.image-link2').magnificPopup({
+                type: 'image',
+                gallery: {
+                    enabled: true
+                }
+            });
+        }
+    </script>
+</body>
+
+</html>
+

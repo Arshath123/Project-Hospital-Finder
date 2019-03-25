@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="author" content="Colorlib">
+        <meta name="description" content="#">
+        <meta name="keywords" content="#">
+        <!-- Page Title -->
+        <title>Hospital Finder</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="css1/bootstrap.min.css">
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+        <!-- Simple line Icon -->
+        <link rel="stylesheet" href="css1/simple-line-icons.css">
+        <!-- Themify Icon -->
+        <link rel="stylesheet" href="css1/themify-icons.css">
+        <!-- Hover Effects -->
+        <link rel="stylesheet" href="css1/set1.css">
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="css1/style.css">
+        <style>
+        .slider-content_wrap{
+          color: white;
+        }
+        .row d-flex justify-content-center{
+          padding-left:100px;
+        }
+        </style>
+    </head>
+
+    <body>
+
+        <section class="slider d-flex align-items-center">
+            <!-- <img src="images/slider.jpg" class="img-fluid" alt="#"> -->
+            <div class="container">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-12">
+                        <div class="slider-title_box">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="slider-content_wrap">
+                                        <h1>FINDING DOCTORS MADE EASY...!</h1>
+                                        <h4>ENTER THE LOCATION WHERE YOU NEED TO FIND THE HOSPITALS</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex justify-content-center">
+                                <div class="col-md-10">
+                                    <form class="form-wrap mt-4" action = "/display-hospitals" method = "POST">
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                            <input type="text" placeholder="" class="btn-group2" name = "location">
+                                            <button type="submit" class="btn-form"><span class="icon-magnifier search-icon"></span>SEARCH<i class="pe-7s-angle-right"></i></button>
+                                        </div>
+                                    </form>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+      </body>
+      </html>

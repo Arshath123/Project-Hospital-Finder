@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="author" content="Colorlib">
+    <meta name="description" content="#">
+    <meta name="keywords" content="#">
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="#">
+    <!-- Page Title -->
+    <title>Listing &amp; Directory Website Template</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css3/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css3?family=Roboto:300,400,400i,500,700,900" rel="stylesheet">
+    <!-- Simple line Icon -->
+    <link rel="stylesheet" href="css3/simple-line-icons.css">
+    <!-- Themify Icon -->
+    <link rel="stylesheet" href="css3/themify-icons.css">
+    <!-- Hover Effects -->
+    <link rel="stylesheet" href="css3/set1.css">
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css3/style.css">
+</head>
+<style>
+body{
+background-color: white;
+  background-repeat: no-repeat;
+  background-position: top;
+  backface-visibility: visible;
+  background-attachment: scroll;
+  background-size: cover;
+}
+.detail-filter-text{
+  color: black;
+}
+</style>
+
+<body>
+    <!--============================= DETAIL =============================-->
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-7 responsive-wrap">
+                    <div class="row detail-filter-wrap">
+                        <div class="col-md-4 featured-responsive">
+                            <div class="detail-filter-text">
+                                <p><span>Hospitals in {{title}}</span></p>
+                            </div>
+                        </div>
+                        <div class="col-md-8 featured-responsive">
+                            <div class="detail-filter">
+                                <p>Sort by</p>
+                                <form class="filter-dropdown" action = "/sort" method = "POST">
+                                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect">
+                                      <option selected></option>
+                                      <option value="1">Hospital Rating</option>
+                                    </select>
+                                    <button>Submit</button>
+                                </form>
+
+                            </div>
+                          </div>
+
+                            <div class="detail-filter">
+                                <p>Specialisation</p>
+                                <form class="filter-dropdown" action = '/specialization' method = "POST">
+                                    <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name = "spec">
+                                      <option selected></option>
+                                      <option value="heart" >Heart</option>
+                                      <option value="liver" >Liver</option>
+                                      <option value="brain" >Brain</option>
+                                      <option value="kidney" >Kidney</option>
+                                    </select>
+                                    <button>Submit</button>
+                                </form>
+                            </div>
+
+                            <div class="col-md-8 featured-responsive">
+                                <div class="detail-filter">
+                                    <p>Filter by</p>
+                                    <form class="filter-dropdown" action = '/ambulance' method = "POST">
+                                        <select class="custom-select mb-2 mr-sm-2 mb-sm-0" id="inlineFormCustomSelect" name = "facility">
+                                          <option selected></option>
+                                          <option value="amb">Ambulance Facility</option>
+                                        </select>
+                                        <button>Submit</button>
+                                    </form>
+
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    {{#each r}}
+                        <div class="col-sm-6 col-lg-12 col-xl-6 featured-responsive">
+                                    <div class="featured-title-box">
+                                        <h4><a href="/display-doctors/{{hospital_id}}">{{name}}</a></h4>
+                                        <p>Hospital </p>
+                                        <ul>
+                                            <li><span class="icon-location-pin"></span>
+                                                <p>{{address}}</p>
+                                            </li>
+                                            <li><span class="icon-screen-smartphone"></span>
+                                                <p>{{phoneno}}</p>
+                                            </li>
+
+                                        </ul>
+                                        <div class="bottom-icons">
+                                            <div class="open-now">OPEN NOW</div>
+                                            <span class="ti-heart"></span>
+                                            <span class="ti-bookmark"></span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        {{/each}}
+                        </div>
+                      </div>
+                    </div>
+    </section>
+</body>
+
+</html>
